@@ -9,7 +9,7 @@ services:
       - ./db/conf.d:/etc/mysql/conf.d
       - ./db/data:/var/lib/mysql
       - ./db/initdb.d:/docker-entrypoint-initdb.d
-    env_file: .env
+    
     environment:
       TZ: Asia/Seoul
     networks:
